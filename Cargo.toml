@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 aes-gcm = "0.10.3"
-axum = "0.8.9"
+axum = { version = "0.8.9", features = ["ws"] }
 base64 = "0.22.1"
-tokio = "1.52.0"
+serde = { version = "1.0.228", features = ["derive"] }
+tokio = { version = "1.52.0", features = ["rt-multi-thread", "macros", "net"] }
