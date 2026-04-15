@@ -1,3 +1,4 @@
+mod crypto;
 mod routes;
 
 use axum::{Router, routing::get, routing::post};

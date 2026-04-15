@@ -16,6 +16,10 @@ impl Crypto {
     pub fn base64_encode(&self) -> String {
         general_purpose::STANDARD.encode(&self.message)
     }
+
+    pub fn get_key_base64(&self) -> String {
+        general_purpose::STANDARD.encode(&self.key)
+    }
 }
 
 #[allow(non_snake_case)]
