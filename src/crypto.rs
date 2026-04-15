@@ -6,6 +6,8 @@ use aes_gcm::{
 use base64::{Engine as _, engine::general_purpose};
 
 // this is a struct for an encrypted message
+// THIS FILE WILL BE USED ON THE CLIENT, NOT THIS SERVER
+// ITS HERE FOR TESTING PURPOSES
 pub struct Crypto {
     pub key: [u8; 32],
     pub nonce: [u8; 12],
