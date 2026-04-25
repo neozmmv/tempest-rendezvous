@@ -1,0 +1,18 @@
+info:
+  name: Tempest WS
+  type: websocket
+  seq: 3
+
+websocket:
+  url: http://localhost:3000/api/ws
+  message:
+    type: json
+    data: |-
+      {
+        "message": "oi"
+      }
+  auth: inherit
+
+settings:
+  timeout: 0
+  keepAliveInterval: 0
